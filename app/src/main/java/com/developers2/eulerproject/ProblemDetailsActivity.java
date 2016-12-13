@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.developers2.eulerproject.questions.Euler01;
+import com.developers2.eulerproject.questions.Euler02;
 
 public class ProblemDetailsActivity extends AppCompatActivity {
 
@@ -33,8 +34,12 @@ public class ProblemDetailsActivity extends AppCompatActivity {
 
         switch (problemSelected) {
             case 1:
-                problemEnunciation = Euler01.getTitle();
+                problemEnunciation = Euler01.getProblemEnunciation();
                 solution = Euler01.solution();
+                break;
+            case 2:
+                problemEnunciation = Euler02.getProblemEnunciation();
+                solution = Euler02.solution();
                 break;
             default:
                 problemEnunciation = "Error";

@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     private List<String> listContent() {
         List<String> list = new  ArrayList<>();
-        for (int count = 1; count <= 1; count++ ) {
+        for (int count = 1; count <= 2; count++ ) {
             list.add("Euler " + count );
         }
         return list;

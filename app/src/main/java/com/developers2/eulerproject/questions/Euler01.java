@@ -1,7 +1,7 @@
 package com.developers2.eulerproject.questions;
 
 public abstract class Euler01 {
-    private static String title = "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.\n" +
+    private static String problemEnunciation = "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.\n" +
             "\n" +
             "Find the sum of all the multiples of 3 or 5 below 1000.";
 
@@ -15,7 +15,7 @@ public abstract class Euler01 {
         return String.valueOf(sum);
     }
 
-    public static String getTitle() {
-        return title;
+    public static String getProblemEnunciation() {
+        return problemEnunciation;
     }
 }
