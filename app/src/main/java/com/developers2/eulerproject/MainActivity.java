@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
+
                 Intent intent = new Intent(MainActivity.this, ProblemDetailsActivity.class);
-                int eulerProblem = position;
-                intent.putExtra("aaa", eulerProblem);
+                intent.putExtra(ProblemDetailsActivity.PARAM_PROBLEM, position + 1);
                 startActivity(intent);
             }
         });
