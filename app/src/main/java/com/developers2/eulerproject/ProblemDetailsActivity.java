@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.developers2.eulerproject.questions.Euler01;
 import com.developers2.eulerproject.questions.Euler02;
+import com.developers2.eulerproject.questions.Euler03;
 
 public class ProblemDetailsActivity extends AppCompatActivity {
 
@@ -40,6 +41,10 @@ public class ProblemDetailsActivity extends AppCompatActivity {
             case 2:
                 problemEnunciation = Euler02.getProblemEnunciation();
                 solution = Euler02.solution();
+                break;
+            case 3:
+                problemEnunciation = Euler03.getProblemEnunciation();
+                solution = Euler03.solution();
                 break;
             default:
                 problemEnunciation = "Error";
